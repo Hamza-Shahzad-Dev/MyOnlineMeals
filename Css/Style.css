@@ -1,0 +1,354 @@
+body{
+    /* CSS Reset:  */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Exo 2";
+}
+
+/* Navigation Menu:  */
+header::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+
+}
+
+header{
+    padding: 10px 0px;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
+
+#navBar{
+    display: flex;
+    align-items: center;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    margin-bottom: 0px;
+}
+
+#logo img{
+    width: 150px;
+    filter: invert(100%);
+}
+
+.navItems{
+    display: flex;
+    padding: 0px;
+    align-items: center;
+    margin-left: 0px;
+}
+
+.items{
+    list-style: none;
+    padding: 10px 15px;
+}
+
+#firstItem{
+    padding-left: 0px;
+}
+
+.items a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.items a:hover{
+    color: rgb(245, 194, 194);
+    border-bottom: 1px solid white;
+    transition: all ease-in-out 0.5s;
+}
+
+/* Home Section:  */
+#home::before{
+    content: "";
+    background: url("../Assest/Bg1.jpg") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#home{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: black;
+    position: relative;
+}
+
+.hPrimary{
+    font-size: 4rem;
+    margin-bottom: 5px;
+    font-weight: 900;
+    margin-top: 0px;
+    font-family: "Philosopher";
+    text-shadow: 5px 5px white;
+    text-align: center;
+}
+
+.hSecondary{
+    font-size: 3rem;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-weight: 800;
+    font-family: "Philosopher";
+    text-shadow: 5px 5px white;
+}
+
+#intro{
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    padding: 5px 0px;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.btn{
+    margin-top: 5px;
+    padding: 15px 20px;
+    font-size: 20px;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn:hover{
+    background-color: black;
+    color: wheat;
+    transition: all ease 0.55s;
+    box-shadow: -5px -5px 5px gainsboro;
+    text-shadow: -1px -1px 3px gainsboro;
+}
+
+/* Services Section:  */
+.servicesContainer::before{
+    content: "";
+    background-color: rgb(233, 197, 197);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.servicesContainer{
+    font-family: "Exo 2";
+    position: relative;
+    /* border: 2px solid red; */
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.servicesContainer h1{
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+#services{
+    /* border: 2px solid blue; */
+    margin: 20px;
+    display: flex;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.cards{
+    border: 2px solid black;
+    background-color: rgb(255, 181, 181);
+    border-radius: 20px;
+    margin: 5px 15px;
+}
+
+.cards img{
+    /* border: 2px solid purple; */
+    height: 160px;
+    display: block;
+    margin: 10px auto;
+}
+
+.cards h4{
+    text-align: center;
+    margin: 5px 0px;
+    text-shadow: 1px 1px 2px rgb(158, 117, 117);
+    font-size: 1.5rem;
+}
+
+.cards p{
+    text-align: justify;
+    margin: 5px 0px;
+    padding: 5px 20px;
+    font-size: 18px;
+    font-family: "Exo 2";
+}
+
+/* Client Section:  */
+.clients::before{
+    content: "";
+    background: url("../Assest/ClientsBg.jpg") no-repeat top center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+.clients{
+    /* border: 2px solid green; */
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#clients{
+    /* border: 2px solid orangered; */
+    margin: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    /* border: 2px solid darkblue; */
+    margin: 10px 30px;
+}
+
+.client-item img{
+    height: 100px;
+    padding: 20px 25px;
+}
+
+.clients #description{
+    text-align: center;
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: 500;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 30px 50px;
+    margin-top: 0px;
+}
+
+#Client-btn{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 700;
+    margin-top: -30px;
+    margin-bottom: 25px;
+}
+
+
+/* Contact Section:  */
+.contact::before{
+    content: "";
+    background: url("../Assest/ContactBg.jpg") no-repeat top center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+.contact{
+    position: relative;
+    min-height: 100vh;
+}
+
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#contact-box form{
+    width: 50%;
+}
+
+.form-group{
+    padding: 10px;
+}
+
+.form-group label{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "Exo 2";
+    margin: 1px 0px;
+}
+
+.form-group input, textarea{
+    width: 90%;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Exo 2";
+    margin: 10px 5px;
+    padding: 15px 25px;
+    background-color: white;
+    border: 1px solid gray;
+    outline: none;
+}
+
+.form-group input::placeholder{
+    color: black;
+}
+
+.form-group #Contact-btn{
+    display: block;
+    width: 20%;
+    margin: auto;
+}
+
+/* Footer:  */
+footer{
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,32 @@
+/* Client section responsiveness:  */
+.clients h1{
+    font-size: 2.5rem;
+    text-shadow: 2px 2px white;
+}
+
+#clients{
+    flex-wrap: wrap;
+}
+
+#Client-btn{
+    margin-top: 10px;
+}
+
+/* When width is 700px:  */
+@media screen and (max-width:700px){
+    .client-item img{
+        height: 80px;
+        padding: 10px;
+    }
+
+    .clients #description{
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 15px 20px;
+    }
+
+    #Client-btn{
+        font-size: 15px;
+    }
+}
+

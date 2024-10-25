@@ -1,0 +1,60 @@
+/* Contact section responsiveness:  */
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-group #Contact-btn{
+    width: 40%;
+    font-size: 18px;
+}
+
+/* When width is 980px:  */
+@media screen and (max-width:980px){
+    .form-group #Contact-btn{
+        width: 50%;
+        font-size: 20px;
+    }
+
+    .contact h1{
+        font-size: 2rem;
+        text-shadow: 1px 1px white;
+    }
+
+    .form-group{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .form-group input, textarea{
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+
+/* When width is 800px:  */
+@media screen and (max-width:800px){
+    .form-group #Contact-btn{
+        width: 80%;
+    }
+
+    footer{
+        font-size: 10px;
+    }
+}
+
+/* When width is 550px:  */
+@media screen and (max-width:550px){
+    .form-group #Contact-btn{
+        width: 100%;
+    }
+
+    .form-group label{
+        font-size: 1rem;
+    }
+}
+

@@ -1,0 +1,32 @@
+/* Navigation menu responsiveness:  */
+header{
+    padding: 0px;
+}
+
+#navBar{
+    flex-direction: column;
+}
+
+#logo{
+    width: 130px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+#logo img{
+    width: 130px;
+    padding: 0px;
+}
+
+.navItems{
+    margin-top: 0px;
+    padding: 0px 5px;
+}
+
+.items{
+    padding: 5px 10px;
+}
+
+.items a{
+    font-size: 1rem;
+}

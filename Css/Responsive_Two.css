@@ -1,0 +1,70 @@
+/* Home section responsiveness:  */
+#home::before{
+    opacity: 0.7;
+}
+
+#home{
+    height: 70vh;
+}
+
+#home .hPrimary{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px white;
+}
+
+#home .hSecondary{
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px white;
+}
+
+#home #intro{
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0px 150px;
+    text-shadow: 1px 1px black;
+    text-align: center;
+}
+
+#home .btn{
+    margin-top: 2px;
+    padding: 10px 15px;
+    font-size: 15px;
+    border-radius: 15px;
+    font-weight: 300;
+}
+
+/* When width is 800px:  */
+@media screen and (max-width:800px){
+    #home{
+        height: 50vh;
+    }
+
+    #home::before{
+        opacity: 0.9;
+    }
+    
+    #home #intro{
+        display: none;
+    }
+
+    #home .hPrimary{
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+
+    #home .hSecondary{
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+    }
+
+    #home .btn{
+        margin-top: 10px;
+        padding: 10px 10px;
+        font-size: 15px;
+        border-radius: 15px;
+        font-weight: 300;
+    }
+}
